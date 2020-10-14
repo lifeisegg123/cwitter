@@ -11,6 +11,7 @@ const Home = ({ userObj }) => {
         id: doc.id,
         ...doc.data(),
       }));
+
       setTweets(tweetArray);
     });
   }, []);

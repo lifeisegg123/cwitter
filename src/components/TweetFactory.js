@@ -9,9 +9,8 @@ const TweetFactory = ({ userObj }) => {
   const [attachment, setAttachment] = useState("");
 
   const onSubmit = async (event) => {
-    if (tweet === "") return;
-
     event.preventDefault();
+    if (tweet === "") return;
 
     let attachmentUrl = "";
     if (attachment !== "") {
